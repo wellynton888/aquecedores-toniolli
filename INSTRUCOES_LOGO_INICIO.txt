@@ -1,0 +1,1 @@
+Logo original da empresa refeito a partir da foto fornecida, sem fundo branco. Cabeçalho de todas as páginas atualizado com símbolo nítido e nome legível. Envie todos os arquivos deste ZIP para a raiz do repositório GitHub e substitua os antigos. Depois pressione Ctrl+F5.\n

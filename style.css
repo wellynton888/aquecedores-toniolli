@@ -276,3 +276,15 @@ h1 span { color: var(--orange); }
 /* Desidratadores: galeria sem caixa branca ou margens internas */
 .titan-hero .titan-photo-panel.titan-gallery { background:transparent; padding:0; min-height:0; box-shadow:none; border-radius:0; display:block; }
 .titan-hero .titan-photo-panel.titan-gallery .titan-gallery-stage { border-radius:14px; }
+
+/* Logo original restaurado: alta resolução, cores vivas, sem fundo branco */
+.site-header .brand, footer .brand {display:inline-flex;align-items:center;gap:9px;}
+.brand .brand-logo {width:66px!important;height:62px!important;max-height:none!important;object-fit:contain!important;flex:none;background:transparent!important;filter:none!important;opacity:1!important;}
+.brand .brand-name {display:flex;flex-direction:column;justify-content:center;line-height:1.12;white-space:nowrap;letter-spacing:.03em;}
+.brand .brand-name strong {font-size:12px;font-weight:800;color:#f7f9fc;}
+.brand .brand-name em {font-size:20px;font-weight:900;font-style:italic;color:#ff8914;}
+@media(max-width:720px) {
+  .brand .brand-logo {width:50px!important;height:49px!important;}
+  .brand .brand-name strong {font-size:9px;}
+  .brand .brand-name em {font-size:16px;}
+}
