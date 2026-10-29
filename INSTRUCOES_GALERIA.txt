@@ -1,1 +1,1 @@
-Galeria do Titan: três fotos padronizadas em 1280x720 (16:9). Troca automática a cada 10 segundos, setas e indicadores. Envie todos os arquivos extraídos para a raiz do repositório GitHub, substituindo titan.html e style.css e adicionando titan-galeria-01.jpg, 02 e 03.\n
+Galeria Titan: somente as duas fotos enviadas por ultimo, ambas 16:9 (1280x720), alternando a cada 10 segundos. Atualize os arquivos do repositorio GitHub. A foto original da galeria titan-galeria-01.jpg nao e mais utilizada e pode ser excluida do repositorio.
