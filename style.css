@@ -238,3 +238,17 @@ h1 span { color: var(--orange); }
 /* Hero sem ilustração do aquecedor: destaque para foto do aviário */
 .hero-content {grid-template-columns: minmax(0, 1fr);}
 .hero-copy {max-width: 700px;}
+
+/* Galeria de fotos do Titan — imagens uniformizadas em 16:9 */
+.titan-gallery { overflow: visible; }
+.titan-gallery-stage {position:relative;aspect-ratio:16/9;width:100%;overflow:hidden;border-radius:14px;background:#1b2024;}
+.titan-gallery .titan-gallery-image {position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;visibility:hidden;transition:opacity .65s ease;display:block;}
+.titan-gallery .titan-gallery-image.is-active {opacity:1;visibility:visible;}
+.titan-gallery-arrow {position:absolute;top:50%;transform:translateY(-50%);z-index:2;border:0;border-radius:50%;background:rgba(15,20,23,.72);color:#fff;width:40px;height:40px;cursor:pointer;font-size:20px;}
+.titan-gallery-prev {left:12px;} .titan-gallery-next {right:12px;}
+.titan-gallery-arrow:hover {background:#ed751c;}
+.titan-gallery-dots {display:flex;justify-content:center;gap:10px;margin-top:14px;}
+.titan-gallery-dots button {border:0;background:#a5adb2;width:10px;height:10px;border-radius:50%;cursor:pointer;padding:0;}
+.titan-gallery-dots button.is-active {background:#f47720;width:28px;border-radius:12px;}
+.titan-gallery-hint {text-align:center;font-size:12px;color:#a6afb5;margin:10px 0 0;}
+@media(prefers-reduced-motion:reduce){.titan-gallery .titan-gallery-image{transition:none;}}

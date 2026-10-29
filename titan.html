@@ -19,7 +19,21 @@
 <section class="titan-hero"><div class="container">
 <a class="back-link" href="index.html#produtos">← Voltar ao catálogo de produtos</a>
 <div class="titan-layout">
-<div class="titan-photo-panel"><img src="aquecedor-titan.jpg" alt="Foto real do Aquecedor Titan da Aquecedores Toniolli"></div>
+<div class="titan-photo-panel titan-gallery" aria-label="Galeria de fotos do Aquecedor Titan">
+  <div class="titan-gallery-stage">
+    <img class="titan-gallery-image is-active" src="titan-galeria-01.jpg" alt="Aquecedor Titan — foto principal" fetchpriority="high">
+    <img class="titan-gallery-image" src="titan-galeria-02.jpg" alt="Aquecedor Titan — vista lateral no interior da fábrica" loading="lazy">
+    <img class="titan-gallery-image" src="titan-galeria-03.jpg" alt="Aquecedor Titan — equipamento em frente à Aquecedores Toniolli" loading="lazy">
+    <button class="titan-gallery-arrow titan-gallery-prev" type="button" aria-label="Foto anterior">❮</button>
+    <button class="titan-gallery-arrow titan-gallery-next" type="button" aria-label="Próxima foto">❯</button>
+  </div>
+  <div class="titan-gallery-dots" aria-label="Escolher foto">
+    <button class="is-active" type="button" aria-label="Mostrar foto 1" aria-current="true"></button>
+    <button type="button" aria-label="Mostrar foto 2"></button>
+    <button type="button" aria-label="Mostrar foto 3"></button>
+  </div>
+  <p class="titan-gallery-hint">As fotos mudam automaticamente a cada 10 segundos.</p>
+</div>
 <div class="titan-copy"><p class="eyebrow">AQUECEDORES TONIOLLI · PRODUTOS</p><h1>Aquecedor <span>Titan</span></h1>
 <p>Conheça o Titan, um equipamento da Aquecedores Toniolli. Consulte nossa equipe para confirmar as características técnicas e encontrar a solução adequada à sua necessidade.</p>
 <div class="titan-tags"><span>Foto real do produto</span><span>Informações sob consulta</span></div>
@@ -77,5 +91,37 @@ document.querySelectorAll('.titan-whatsapp').forEach(link => {
   link.href = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(titanMessage);
   link.target = '_blank'; link.rel = 'noopener noreferrer';
 });
+</script>
+<script>
+(() => {
+  const gallery = document.querySelector('.titan-gallery');
+  if (!gallery) return;
+  const photos = [...gallery.querySelectorAll('.titan-gallery-image')];
+  const dots = [...gallery.querySelectorAll('.titan-gallery-dots button')];
+  let current = 0, timer;
+  const show = (index) => {
+    current = (index + photos.length) % photos.length;
+    photos.forEach((photo, i) => photo.classList.toggle('is-active', i === current));
+    dots.forEach((dot, i) => {
+      dot.classList.toggle('is-active', i === current);
+      if (i === current) dot.setAttribute('aria-current', 'true');
+      else dot.removeAttribute('aria-current');
+    });
+  };
+  const start = () => {
+    clearInterval(timer);
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      timer = setInterval(() => show(current + 1), 10000);
+    }
+  };
+  gallery.querySelector('.titan-gallery-prev').addEventListener('click', () => {show(current - 1); start();});
+  gallery.querySelector('.titan-gallery-next').addEventListener('click', () => {show(current + 1); start();});
+  dots.forEach((dot, i) => dot.addEventListener('click', () => {show(i); start();}));
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) clearInterval(timer);
+    else start();
+  });
+  start();
+})();
 </script>
 </body></html>
