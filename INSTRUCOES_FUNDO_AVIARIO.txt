@@ -1,0 +1,1 @@
+Atualizacao: fundo da pagina inicial com pintinhos dentro de aviario. Envie todos os arquivos extraidos para a raiz do repositorio GitHub. O arquivo fundo-aviario-pintinhos.jpg deve ficar ao lado de index.html e style.css.
