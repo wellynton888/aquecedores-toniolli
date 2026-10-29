@@ -1,0 +1,1 @@
+Logo original da Aquecedores Toniolli com fundo transparente, cores mais vivas e ícones da aba atualizados. Extraia o ZIP e envie todos os arquivos para a raiz do repositório GitHub.
