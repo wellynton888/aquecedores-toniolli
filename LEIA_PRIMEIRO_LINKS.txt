@@ -1,0 +1,10 @@
+SITE SEM DOMINIO PERSONALIZADO
+
+1. Extraia este ZIP.
+2. No repositorio wellynton888/aquecedores-toniolli, envie os arquivos extraidos para a RAIZ (nao envie o ZIP).
+3. Substitua os arquivos existentes e clique em Commit changes.
+4. Em Settings > Pages, confirme que Custom domain esta vazio e que o site e publicado da branch main, pasta /(root).
+5. Acesse https://wellynton888.github.io/aquecedores-toniolli/ e pressione Ctrl+Shift+R.
+6. A pagina Titan deve abrir em https://wellynton888.github.io/aquecedores-toniolli/titan.html
+
+Os links do site sao relativos (titan.html, desidratador.html e arador-de-cama.html). Nenhum CNAME incluido.
