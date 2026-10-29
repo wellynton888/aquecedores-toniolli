@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Conheça o Aquecedor Titan da Aquecedores Toniolli. Consulte a ficha técnica e solicite orçamento pelo WhatsApp.">
+<title>Aquecedor Titan | Aquecedores Toniolli</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header"><div class="container nav-wrap">
+<a class="brand" href="index.html" aria-label="Aquecedores Toniolli - página inicial"><img class="brand-logo" src="imagens/logo-toniolli.png" alt="Logotipo Aquecedores Toniolli"></a>
+<button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+<nav class="nav-links" aria-label="Navegação principal"><a href="index.html">Início</a><a href="index.html#produtos">Produtos</a><a href="#video-titan">Vídeo</a><a href="#ficha">Ficha técnica</a><a href="#orcamento">Orçamento</a></nav>
+<a class="button button-small titan-whatsapp" href="#orcamento">Solicitar orçamento</a>
+</div></header>
+<main>
+<section class="titan-hero"><div class="container">
+<a class="back-link" href="index.html#produtos">← Voltar ao catálogo de produtos</a>
+<div class="titan-layout">
+<div class="titan-photo-panel"><img src="imagens/aquecedor-titan.jpg" alt="Foto real do Aquecedor Titan da Aquecedores Toniolli"></div>
+<div class="titan-copy"><p class="eyebrow">AQUECEDORES TONIOLLI · PRODUTOS</p><h1>Aquecedor <span>Titan</span></h1>
+<p>Conheça o Titan, um equipamento da Aquecedores Toniolli. Consulte nossa equipe para confirmar as características técnicas e encontrar a solução adequada à sua necessidade.</p>
+<div class="titan-tags"><span>Foto real do produto</span><span>Informações sob consulta</span></div>
+<a class="button titan-whatsapp" href="#orcamento">Solicitar orçamento pelo WhatsApp →</a>
+<a class="titan-secondary-link" href="#ficha">Ver ficha técnica ↓</a>
+</div></div></div></section>
+
+<section class="titan-video-section" id="video-titan">
+  <div class="container">
+    <p class="eyebrow">CONHEÇA O TITAN</p>
+    <h2>Apresentação do Aquecedor Titan</h2>
+    <p>Conheça o equipamento no vídeo de apresentação da Aquecedores Toniolli.</p>
+    <div class="titan-video-gallery">
+      <article class="titan-video-item video-uniforme">
+        <h3>Vídeo de apresentação do Titan</h3>
+        <div class="titan-video-frame">
+          <video controls playsinline preload="metadata" width="1280" height="720" aria-label="Vídeo explicativo do Aquecedor Titan">
+            <source src="videos/video-titan-explicado-comprimido.mp4" type="video/mp4">
+            Seu navegador não oferece suporte a vídeo HTML5.
+            <a href="videos/video-titan-explicado-comprimido.mp4">Abrir vídeo</a>
+          </video>
+        </div>
+      </article>
+    </div>
+    <a class="button titan-whatsapp" href="#orcamento">Solicitar orçamento pelo WhatsApp →</a>
+  </div>
+</section>
+<section class="titan-specs-section" id="ficha"><div class="container"><p class="eyebrow">INFORMAÇÕES DO PRODUTO</p><h2>Ficha técnica — Titan</h2>
+<p class="titan-specs-note">Os dados abaixo ainda precisam ser confirmados pela empresa. Para preencher, edite os valores no arquivo <code>titan.html</code>.</p>
+<div class="titan-spec-grid">
+<div class="titan-spec"><strong>Modelo</strong><span>Titan</span></div>
+<div class="titan-spec"><strong>Tipo de combustível</strong><span>A confirmar</span></div>
+<div class="titan-spec"><strong>Potência térmica</strong><span>A confirmar</span></div>
+<div class="titan-spec"><strong>Capacidade de aquecimento</strong><span>A confirmar</span></div>
+<div class="titan-spec"><strong>Consumo de combustível</strong><span>A confirmar</span></div>
+<div class="titan-spec"><strong>Dimensões (A × L × P)</strong><span>A confirmar</span></div>
+<div class="titan-spec"><strong>Peso</strong><span>A confirmar</span></div>
+<div class="titan-spec"><strong>Alimentação elétrica</strong><span>A confirmar</span></div>
+<div class="titan-spec"><strong>Materiais / construção</strong><span>A confirmar</span></div>
+<div class="titan-spec"><strong>Aplicações recomendadas</strong><span>A confirmar</span></div>
+</div></div></section>
+<section class="titan-cta" id="orcamento"><div class="container titan-cta-inner"><div><p class="eyebrow">FALE COM A NOSSA EQUIPE</p><h2>Solicite um orçamento do Titan</h2><p>Envie uma mensagem para consultar preços, disponibilidade e detalhes do equipamento.</p></div><a class="button titan-whatsapp" href="#orcamento">Conversar pelo WhatsApp →</a></div></section>
+</main>
+<footer class="site-footer"><div class="container footer-main"><a class="brand" href="index.html"><img class="brand-logo footer-logo" src="imagens/logo-toniolli.png" alt="Logotipo Aquecedores Toniolli"></a><p>Equipamentos para aquecimento de aviários.</p><a href="index.html#produtos">Voltar aos produtos</a></div><div class="footer-bottom"><div class="container"><span>© <span id="year"></span> Aquecedores Toniolli. Todos os direitos reservados.</span></div></div></footer>
+<script src="script.js"></script><script>
+// Mensagem específica do produto, utilizando o mesmo número definido em script.js.
+const titanMessage = 'Olá! Gostaria de solicitar um orçamento do Aquecedor Titan da Aquecedores Toniolli.';
+document.querySelectorAll('.model-whatsapp').forEach(link => {
+  const model = link.dataset.model;
+  link.href = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' +
+    encodeURIComponent('Olá! Gostaria de solicitar um orçamento do Aquecedor ' + model + ' da Aquecedores Toniolli.');
+  link.target = '_blank'; link.rel = 'noopener noreferrer';
+});
+document.querySelectorAll('.titan-whatsapp').forEach(link => {
+  link.href = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(titanMessage);
+  link.target = '_blank'; link.rel = 'noopener noreferrer';
+});
+</script>
+</body></html>
