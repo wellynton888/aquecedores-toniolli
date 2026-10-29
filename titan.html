@@ -111,7 +111,7 @@ document.querySelectorAll('.titan-whatsapp').forEach(link => {
   const start = () => {
     clearInterval(timer);
     if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      timer = setInterval(() => show(current + 1), 10000);
+      timer = setInterval(() => show(current + 1), 5000);
     }
   };
   gallery.querySelector('.titan-gallery-prev').addEventListener('click', () => {show(current - 1); start();});
