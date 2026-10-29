@@ -252,3 +252,18 @@ h1 span { color: var(--orange); }
 .titan-gallery-dots button.is-active {background:#f47720;width:28px;border-radius:12px;}
 .titan-gallery-hint {text-align:center;font-size:12px;color:#a6afb5;margin:10px 0 0;}
 @media(prefers-reduced-motion:reduce){.titan-gallery .titan-gallery-image{transition:none;}}
+
+/* Galeria de desidratadores: formato padronizado, fotos completas */
+.desidratadores-gallery-section{background:#161c20;color:#fff}
+.desidratadores-gallery-section> .container > p:not(.eyebrow){color:#b9c1c6}
+.desidratadores-gallery{max-width:950px;margin:28px auto 0}
+.desidratadores-gallery-stage{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;border-radius:16px;background:#111}
+.desidratadores-gallery-stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;opacity:0;visibility:hidden;transition:opacity .6s ease}
+.desidratadores-gallery-stage img.is-active{opacity:1;visibility:visible}
+.desidratadores-gallery-stage button{position:absolute;z-index:2;top:50%;transform:translateY(-50%);border:0;background:rgba(0,0,0,.65);color:#fff;border-radius:50%;height:44px;width:44px;cursor:pointer;font-size:20px}
+.desidratadores-prev{left:14px}.desidratadores-next{right:14px}
+.desidratadores-gallery-dots{display:flex;justify-content:center;gap:10px;margin:18px 0 0}
+.desidratadores-gallery-dots button{border:0;background:#858e94;width:12px;height:12px;border-radius:99px;cursor:pointer}
+.desidratadores-gallery-dots button.is-active{background:#f47720;width:30px}
+.desidratadores-spec{min-height:86px}.desidratadores-spec strong,.desidratadores-spec span{display:block;min-height:1.1em}
+@media(prefers-reduced-motion:reduce){.desidratadores-gallery-stage img{transition:none}}

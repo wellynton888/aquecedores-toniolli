@@ -5,13 +5,13 @@
 - `style.css`: cores, layout e responsividade.
 - `script.js`: menu para celular e links do WhatsApp.
 - `imagens/logo-toniolli.jpg`: logotipo enviado pela empresa.
-- `imagens/desidratador.jpg`: foto do desidratador enviada pela empresa.
+- `imagens/desidratador.jpg`: foto do desidratadores enviada pela empresa.
 
 ## Antes de publicar
 1. Abra `script.js`.
 2. Troque `5546999999999` pelo WhatsApp real da empresa, usando somente números e incluindo 55 + DDD + número.
 3. Revise os textos e confirme se todas as descrições correspondem aos serviços e produtos reais da empresa.
-4. O logotipo e a foto do desidratador enviados por você já estão na pasta `imagens/`. As fotos dos aquecedores a pellet, lenha e cavaco ainda podem ser adicionadas quando você as enviar. As imagens de fundo decorativas são carregadas do Unsplash pela internet.
+4. O logotipo e a foto do desidratadores enviados por você já estão na pasta `imagens/`. As fotos dos aquecedores a pellet, lenha e cavaco ainda podem ser adicionadas quando você as enviar. As imagens de fundo decorativas são carregadas do Unsplash pela internet.
 
 ## Testar no computador
 Abra `index.html` no navegador. Para uma experiência melhor, abra a pasta no Visual Studio Code e use a extensão Live Server.
@@ -72,9 +72,9 @@ O vídeo 1 é horizontal (848×480) e o vídeo 2 é vertical (1080×1920). Cada 
 Os dois players na página Titan usam 16:9, com tamanho igual. O vídeo vertical de apresentação é recortado visualmente para preencher o player sem barras laterais. O arquivo original permanece intacto.
 
 ## Catálogo atual
-Removidos Titan 6.000 e Titan 12.000 da página inicial e da página Titan. Permanecem Aquecedor Titan, Desidratador e Arador de Cama.
+Removidos Titan 6.000 e Titan 12.000 da página inicial e da página Titan. Permanecem Aquecedor Titan, Desidratadores e Arador de Cama.
 
-## Desidratador
+## Desidratadores
 Página `desidratador.html` com foto e botão de orçamento, acessível pelo cartão do produto na página inicial.
 
 
