@@ -1,0 +1,1 @@
+Página dos Desidratadores padronizada com a do Titan: galeria no topo (2 fotos inteiras em quadro 16:9, troca a cada 10 segundos), ficha técnica com 10 campos em branco, seção de orçamento no mesmo estilo. Extraia e envie os arquivos à raiz do repositório GitHub.
