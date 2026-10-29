@@ -1,0 +1,11 @@
+AQUECEDORES TONIOLLI - SITE CORRIGIDO
+
+1. Extraia este ZIP.
+2. No repositorio wellynton888/aquecedores-toniolli, clique em Add file > Upload files.
+3. Envie os arquivos EXTRAIDOS, nao o ZIP.
+4. Se o GitHub perguntar sobre arquivos com o mesmo nome, confirme a substituicao.
+5. Clique em Commit changes.
+6. Aguarde o GitHub Pages atualizar e pressione Ctrl+F5 no navegador.
+
+Os caminhos das imagens e do video foram ajustados para a raiz do repositorio.
+A pagina Titan contem apenas o video de apresentacao comprimido.
