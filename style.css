@@ -267,3 +267,8 @@ h1 span { color: var(--orange); }
 .desidratadores-gallery-dots button.is-active{background:#f47720;width:30px}
 .desidratadores-spec{min-height:86px}.desidratadores-spec strong,.desidratadores-spec span{display:block;min-height:1.1em}
 @media(prefers-reduced-motion:reduce){.desidratadores-gallery-stage img{transition:none}}
+
+/* Vídeo vertical dos Desidratadores: apresentação no mesmo estilo do Titan, sem cortes */
+.desidratadores-video-item { width:min(100%, 390px); margin-inline:auto; }
+.desidratadores-video-frame { width:100%; margin-inline:auto; aspect-ratio:9/16; overflow:hidden; background:#111; border-radius:14px; }
+.desidratadores-video-frame video { display:block; width:100%; height:100%; max-height:none; object-fit:contain; }

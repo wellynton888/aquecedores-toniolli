@@ -1,0 +1,1 @@
+Vídeo de apresentação dos Desidratadores comprimido para aproximadamente 3,5 MB, adequado ao upload pelo navegador no GitHub. Envie TODOS os arquivos extraídos, incluindo video-desidratadores-apresentacao.mp4, titan.html, desidratador.html e style.css, para a raiz do repositório. O vídeo foi mantido vertical, sem cortes.
