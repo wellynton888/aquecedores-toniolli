@@ -1,10 +1,53 @@
 <!doctype html>
-<html lang="pt-BR"><head>
-  <link rel="icon" type="image/png" sizes="256x256" href="favicon.png">
-  <link rel="shortcut icon" href="favicon.ico"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#171b1e"><meta name="description" content="Conheça o Arador de Cama para aviários da Aquecedores Toniolli e solicite um orçamento."><title>Arador de Cama | Aquecedores Toniolli</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head>
-<body><header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html" aria-label="Aquecedores Toniolli - página inicial"><img class="brand-logo" src="logo-toniolli.png" alt="Símbolo Aquecedores Toniolli"><span class="brand-name"><strong>AQUECEDORES</strong><em>TONIOLLI</em></span></a><button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button><nav class="nav-links" aria-label="Navegação principal"><a href="index.html">Início</a><a href="index.html#produtos">Produtos</a><a href="#ficha">Ficha técnica</a><a href="#contato">Contato</a></nav><a class="button button-small arador-whatsapp" href="#contato">Solicitar orçamento</a></div></header>
-<main><section class="arador-hero"><div class="container"><a class="back-link" href="index.html#produtos">← Voltar aos produtos</a><div class="arador-layout"><div class="arador-image-wrap"><img src="arador-de-cama.jpg" alt="Arador de Cama da Toniolli, equipamento verde e laranja com motor e comandos manuais"></div><div class="arador-description"><p class="eyebrow">EQUIPAMENTOS PARA AVIÁRIOS</p><h1>Arador de <span>Cama</span></h1><p>Conheça o Arador de Cama da Toniolli, um equipamento destinado ao manejo da cama de aviários. Para informações sobre funcionamento, características e disponibilidade, fale com nossa equipe.</p><a class="button arador-whatsapp" href="#contato">Solicitar orçamento pelo WhatsApp →</a></div></div></div></section>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#171b1e">
+<meta name="description" content="Conheça o Arador de Cama para aviários da Aquecedores Toniolli. Veja fotos reais do equipamento e solicite orçamento pelo WhatsApp.">
+<title>Arador de Cama para Aviários | Aquecedores Toniolli</title>
+<link rel="icon" type="image/png" sizes="256x256" href="favicon.png"><link rel="shortcut icon" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+/* Galeria exclusiva do Arador de Cama; não modifica as outras páginas. */
+.arador-carousel{position:relative;width:100%;min-width:0;overflow:hidden;border-radius:16px;background:#14191c;box-shadow:0 12px 36px #0003}
+.arador-carousel-viewport{position:relative;width:100%;height:clamp(320px,43vw,510px);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.arador-slide{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;opacity:0;visibility:hidden;transition:opacity .55s ease,visibility .55s;display:block}
+.arador-slide.active{opacity:1;visibility:visible}
+.arador-carousel-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:2;border:0;border-radius:50%;background:#111c;color:white;width:44px;height:44px;font-size:30px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.arador-carousel-arrow:hover,.arador-carousel-arrow:focus-visible{background:#f47a20;outline:2px solid white;outline-offset:2px}
+.arador-carousel-prev{left:12px}.arador-carousel-next{right:12px}
+.arador-carousel-dots{display:flex;gap:9px;justify-content:center;align-items:center;padding:13px 0 14px}
+.arador-carousel-dot{border:0;width:11px;height:11px;border-radius:20px;background:#8e979b;cursor:pointer;padding:0;transition:background .2s,width .2s}
+.arador-carousel-dot.active{background:#ff8427;width:29px}
+@media(max-width:700px){.arador-carousel-viewport{height:clamp(300px,105vw,470px)}.arador-carousel-arrow{width:38px;height:38px;font-size:26px}}
+@media(prefers-reduced-motion:reduce){.arador-slide{transition:none}}
+</style>
+</head>
+<body>
+<header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html" aria-label="Aquecedores Toniolli - página inicial"><img class="brand-logo" src="logo-toniolli.png" alt="Símbolo Aquecedores Toniolli"><span class="brand-name"><strong>AQUECEDORES</strong><em>TONIOLLI</em></span></a><button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button><nav class="nav-links" aria-label="Navegação principal"><a href="index.html">Início</a><a href="index.html#produtos">Produtos</a><a href="#ficha">Ficha técnica</a><a href="#contato">Contato</a></nav><a class="button button-small arador-whatsapp" href="#contato">Solicitar orçamento</a></div></header>
+<main><section class="arador-hero"><div class="container"><a class="back-link" href="index.html#produtos">← Voltar aos produtos</a><div class="arador-layout">
+<div class="arador-image-wrap">
+<div class="arador-carousel" aria-label="Galeria de fotos do Arador de Cama" aria-roledescription="carrossel">
+ <div class="arador-carousel-viewport">
+  <img class="arador-slide active" src="imagens/arador-cama-1.webp" alt="Arador de Cama Toniolli visto de frente e de lado, com estrutura verde e laranja" width="1400" height="1050" fetchpriority="high">
+  <img class="arador-slide" src="imagens/arador-cama-2.webp" alt="Vista frontal do Arador de Cama Toniolli com guidão e conjunto de trabalho" width="1050" height="1400" loading="lazy">
+  <img class="arador-slide" src="imagens/arador-cama-3.webp" alt="Vista lateral do Arador de Cama Toniolli mostrando o motor e a estrutura" width="1050" height="1400" loading="lazy">
+  <button type="button" class="arador-carousel-arrow arador-carousel-prev" aria-label="Foto anterior">‹</button>
+  <button type="button" class="arador-carousel-arrow arador-carousel-next" aria-label="Próxima foto">›</button>
+ </div>
+ <div class="arador-carousel-dots" aria-label="Selecionar foto"><button type="button" class="arador-carousel-dot active" aria-label="Mostrar foto 1" aria-current="true"></button><button type="button" class="arador-carousel-dot" aria-label="Mostrar foto 2"></button><button type="button" class="arador-carousel-dot" aria-label="Mostrar foto 3"></button></div>
+</div>
+</div>
+<div class="arador-description"><p class="eyebrow">EQUIPAMENTOS PARA AVIÁRIOS</p><h1>Arador de <span>Cama</span></h1><p>Conheça o Arador de Cama da Toniolli, um equipamento destinado ao manejo da cama de aviários. Para informações sobre funcionamento, características e disponibilidade, fale com nossa equipe.</p><a class="button arador-whatsapp" href="#contato">Solicitar orçamento pelo WhatsApp →</a></div>
+</div></div></section>
 <section class="arador-specs" id="ficha"><div class="container"><p class="eyebrow">INFORMAÇÕES DO EQUIPAMENTO</p><h2>Ficha técnica</h2><p class="specs-intro">Dados técnicos ainda não fornecidos. Os campos abaixo serão atualizados quando as especificações forem confirmadas.</p><div class="arador-specs-grid"><div><strong>Produto</strong><span>Arador de Cama</span></div><div><strong>Aplicação</strong><span>Manejo da cama de aviários</span></div><div><strong>Motor / potência</strong><span>A confirmar</span></div><div><strong>Combustível</strong><span>A confirmar</span></div><div><strong>Largura de trabalho</strong><span>A confirmar</span></div><div><strong>Dimensões</strong><span>A confirmar</span></div><div><strong>Peso</strong><span>A confirmar</span></div><div><strong>Demais características</strong><span>A confirmar</span></div></div></div></section>
 <section class="arador-contact" id="contato"><div class="container arador-contact-row"><div><p class="eyebrow">FALE COM A TONIOLLI</p><h2>Solicite seu orçamento</h2><p>Consulte condições, disponibilidade e detalhes do Arador de Cama.</p></div><a class="button arador-whatsapp" href="#contato">Conversar pelo WhatsApp →</a></div></section></main>
 <footer class="site-footer"><div class="container footer-main"><a class="brand" href="index.html"><img class="brand-logo footer-logo" src="logo-toniolli.png" alt="Símbolo Aquecedores Toniolli"><span class="brand-name"><strong>AQUECEDORES</strong><em>TONIOLLI</em></span></a><p>Equipamentos para aviários.</p><a href="index.html#produtos">Voltar aos produtos</a></div><div class="footer-bottom"><div class="container"><span>© <span id="year"></span> Aquecedores Toniolli. Todos os direitos reservados.</span></div></div></footer>
-<script src="script.js"></script><script>document.querySelectorAll('.arador-whatsapp').forEach(link=>{link.href='https://wa.me/'+WHATSAPP_NUMBER+'?text='+encodeURIComponent('Olá! Gostaria de solicitar um orçamento do Arador de Cama da Aquecedores Toniolli.');link.target='_blank';link.rel='noopener noreferrer';});</script></body></html>
+<script src="script.js"></script>
+<script>
+document.querySelectorAll('.arador-whatsapp').forEach(link=>{link.href='https://wa.me/'+WHATSAPP_NUMBER+'?text='+encodeURIComponent('Olá! Gostaria de solicitar um orçamento do Arador de Cama da Aquecedores Toniolli.');link.target='_blank';link.rel='noopener noreferrer';});
+(()=>{const gallery=document.querySelector('.arador-carousel');if(!gallery)return;const slides=[...gallery.querySelectorAll('.arador-slide')],dots=[...gallery.querySelectorAll('.arador-carousel-dot')];let index=0,timer;function show(n){index=(n+slides.length)%slides.length;slides.forEach((s,i)=>{s.classList.toggle('active',i===index);s.setAttribute('aria-hidden',String(i!==index))});dots.forEach((d,i)=>{d.classList.toggle('active',i===index);if(i===index)d.setAttribute('aria-current','true');else d.removeAttribute('aria-current')})}function restart(){clearInterval(timer);if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches)timer=setInterval(()=>show(index+1),5000)}gallery.querySelector('.arador-carousel-prev').addEventListener('click',()=>{show(index-1);restart()});gallery.querySelector('.arador-carousel-next').addEventListener('click',()=>{show(index+1);restart()});dots.forEach((d,i)=>d.addEventListener('click',()=>{show(i);restart()}));gallery.addEventListener('mouseenter',()=>clearInterval(timer));gallery.addEventListener('mouseleave',restart);gallery.addEventListener('focusin',()=>clearInterval(timer));gallery.addEventListener('focusout',e=>{if(!gallery.contains(e.relatedTarget))restart()});document.addEventListener('visibilitychange',()=>{if(document.hidden)clearInterval(timer);else restart()});show(0);restart()})();
+</script>
+</body></html>
